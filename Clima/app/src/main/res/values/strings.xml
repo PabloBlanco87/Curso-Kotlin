@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clima</string>
+    <string name="texto_grados">23º</string>
+    <string name="texto_ciudad">Madrid</string>
+    <string name="texto_estatus">Nublado</string>
+    <string name="texto_bienvenida">Bienvenido a Mi Clima</string>
+    <string name="texto_instrucciones">Para poder ver el clima de una ciudad, selecciona la opción de abajo</string>
+    <string name="texto_boton_madrid">Clima de la ciudad de Madrid (España)</string>
+    <string name="texto_boton_barcelona">Clima de la ciudad de Barcelona (España)</string>
+    <string name="texto_viento">Viento</string>
+    <string name="texto_boton_ny">CLIMA DE LA CIUDAD DE NEW YORK (EEUU)</string>
+    <string name="texto_boton_shangai">clima de la ciudad de shangai (china)</string>
+</resources>
