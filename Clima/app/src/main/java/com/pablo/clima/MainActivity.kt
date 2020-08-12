@@ -65,7 +65,18 @@ class MainActivity : AppCompatActivity() {
                     val gson = Gson()
                     val ciudad = gson.fromJson(response, Ciudad::class.java)
                     tvCiudad?.text = ciudad.name
-                    tvGrados?.text = ciudad.main?.temp.toString() + "º"
+
+                    var grados = ciudad.main?.temp.toString()
+                    var contador: Int = 1
+                    for (i in 0..grados.length) {
+                        contador++
+                        if (grados[i] == '.')
+                            break
+                    }
+
+                    grados = grados.substring(0, contador)
+
+                    tvGrados?.text = grados + "º"
                     tvEstatus?.text = ciudad.weather?.get(0)?.description
                     tvViento?.text = "Viento: " + ciudad.wind?.speed.toString()
 
